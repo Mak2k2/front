@@ -12,24 +12,17 @@ body {
   margin: 0 auto;
 }
 
-/*.grid{
-	display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2vw;
-}*/
-
 .grid {
   display: grid;
   grid-gap: 0px;
-  height: 90vh;
+  min-height: 90vh;
   grid-template-columns: minmax(250px, 350px ) 30% 30%;
   //grid-template-columns: 100% 100% 100%;
   justify-content: center;
   justify-items: center;
   @media (max-width: 544px), (orientation: portrait) {
-    grid-template-columns: 100%;
-    grid-auto-rows: 100%;
+    grid-template-columns: minmax(250px, auto);
+    grid-auto-rows: minmax(250px, auto);
     height: 90%;
   }
   //grid-template-rows: minmax(250px, auto);
@@ -67,7 +60,7 @@ body {
   font-family: 'Georgia';
   font-size: 20px;
   max-width: 90%;
-  overflow: auto;
+  //overflow: auto;
 }
 
 .info_header{
@@ -76,5 +69,6 @@ body {
 }
 
 .links{
-
+  font-size: 22px;
+  overflow: auto;
 }

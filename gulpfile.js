@@ -25,7 +25,7 @@ function clearBuild() {
   return del('build/');
 }
 
-/*function buildStyles() {
+function buildStyles() {
   return src('src/styles/*.scss')
     .pipe(sass())
     .pipe(postcss([
@@ -33,7 +33,7 @@ function clearBuild() {
       cssnano()
     ]))
     .pipe(dest('build/styles/'));
-}*/
+}
 
 function buildPages() {
   // Пути можно передавать массивами
@@ -42,23 +42,12 @@ function buildPages() {
     .pipe(dest('build/'));
 }
 
-function buildStyles() {
+/*function buildStyles() {
   return src('src/styles/*.scss')
     .pipe(sass())
     .pipe(dest('build/styles/'));
 }
-
-/* // Сборка
-function buildPages() {
-  return src('src/pages/*.html')
-    .pipe(dest('build/'));
-}
- */
-/*function buildStyles() {
-  return src('src/styles/*.css')
-    .pipe(dest('build/styles/'));
-}*/
-
+*/
 function buildScripts() {
   return src('src/scripts/**/*.js')
     .pipe(dest('build/scripts/'));
@@ -87,7 +76,7 @@ function buildAssets(cb) {
 function watchFiles() {
   watch(['src/pages/**/*.pug', 'src/blocks/**/*.pug'], buildPages);
   //watch('src/pages/*.html', buildPages);
-  watch('src/styles/*.css', buildStyles);
+  //watch('src/styles/*.css', buildStyles);
   watch('src/scripts/**/*.js', buildScripts);
   watch('src/assets/**/*.*', buildAssets);
   watch('src/styles/*.scss', buildStyles);
@@ -104,13 +93,3 @@ exports.default =
       )
     )
 	);
-
-/*exports.default =
-  parallel(
-    devServer,
-    series(
-      parallel(buildPages, buildStyles, buildScripts, buildAssets),
-      watchFiles
-    )
-  );
-*/

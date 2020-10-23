@@ -4,23 +4,53 @@ html(lang="ru")
 	head
 		include head.pug
 	body
-		include header.pug
-		div.grid
-			div
-				img(src="assets/img/timon.jpg", alt="Foto")
-			div.info(id="text")
-				h1.info_header немного информации обо мне
-				p Моё имя Аркадий в данный момент работаю системным администратором, но давно интересуюсь программированием на различных языках. Думаю в будущем заняться программированием более серьёзно и сделать это основной профессией. Мой опыт работы в сфере IT более 10 лет. Имею отличные знания в области информационной безопасности. Разрабатываю и собираю различные схемы и устройства, пишу технические статьи.
-			div.links
-				h1.info_header Ссылки на любимые фильмы
-				ul
-					li
-						a.link#linkHref(href="https://www.kinopoisk.ru/film/258687/" target="" class="icon-forward") Интерстеллар
-					li
-						a.link#linkHref(href="https://www.kinopoisk.ru/film/335/ " target="" class="icon-forward") Помни
-					li
-						a.link#linkHref(href="https://www.kinopoisk.ru/film/4541/ " target="" class="icon-forward") Шоу Трумана 
-				//- each name in ['1', '2', '3']
-			//- 	div=name      
-	//footer
-	include footer.pug
+		//include header.pug
+		div.container
+			div.top
+				div.header
+					h1 репро 
+						|дукцио
+					p Оффлайн-магазин репродукций шедевров мирового искусства
+					div.info 
+						p 
+						|Санкт-Петербург,
+						br
+						|ул.Адмирала Черокова, 18
+						p 
+						|+7 812 960-22-01
+						br
+						|shop@reproduct.io
+						thre
+				div.slider_z
+					div.slider
+						div
+							img(src="assets/img/1.jpg", alt="Kartina1" class="img1")
+						div
+							img(src="assets/img/2.jpg", alt="Kartina2" class="img2")
+						div
+							img(src="assets/img/3.jpg", alt="Kartina3" class="img3")
+					div.slider_vertical
+						div.vertical_img1
+							img(src="assets/img/1.jpg", alt="Kartina1" class="vertical_img1")
+						div.vertical_img2
+							img(src="assets/img/2.jpg", alt="Kartina2" class="vertical_img2")
+						div.vertical_img3
+							img(src="assets/img/3.jpg", alt="Kartina3" class="vertical_img3")
+			div.middle
+				div.slider_middle
+					div
+						img(src="assets/img/1.jpg", alt="Kartina1" class="img1")
+					div
+						img(src="assets/img/2.jpg", alt="Kartina2" class="img2")
+					div
+						img(src="assets/img/3.jpg", alt="Kartina3" class="img3")
+					div
+						img(src="assets/img/4.jpg", alt="Kartina1" class="img4")
+					div
+						img(src="assets/img/5.jpg", alt="Kartina2" class="img5")
+					div
+						img(src="assets/img/6.jpg", alt="Kartina3" class="img6")
+			div.bottom
+		script(src="scripts/jquery-3.5.1.slim.min.js")
+		script(src="scripts/bundle.js")
+		script(src="scripts/slick.min.js")

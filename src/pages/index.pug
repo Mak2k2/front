@@ -37,6 +37,9 @@ html(lang="ru")
 						div.vertical_img3
 							img(src="assets/img/3.jpg", alt="Kartina3" class="vertical_img3")
 			div.middle
+				div.text_middle
+						h1 популярное
+						p Нестареющая классика и бестселлеры.
 				div.slider_middle
 					div
 						img(src="assets/img/1.jpg", alt="Kartina1" class="img1")
@@ -45,12 +48,24 @@ html(lang="ru")
 					div
 						img(src="assets/img/3.jpg", alt="Kartina3" class="img3")
 					div
-						img(src="assets/img/4.jpg", alt="Kartina1" class="img4")
+						img(src="assets/img/4.jpg", alt="Kartina4" class="img4")
 					div
-						img(src="assets/img/5.jpg", alt="Kartina2" class="img5")
+						img(src="assets/img/5.jpg", alt="Kartina5" class="img5")
 					div
-						img(src="assets/img/6.jpg", alt="Kartina3" class="img6")
+						img(src="assets/img/6.jpg", alt="Kartina6" class="img6")
 			div.bottom
+				div.text_bottom
+					h1 написать нам
+					p
+					div.personal_data
+						a(class="js-link-popup" href="#sizes") |Правила обработки персональных данных
+						div(id="sizes" class="mfp-hide white-popup-block")
+							h1 правила обработки персональных данных
+							table
+								b test
+				div.message
+					input(type="text" size="40")
+					textarea(name="comment" cols="40" rows="3")
 		script(src="scripts/jquery-3.5.1.slim.min.js")
 		script(src="scripts/bundle.js")
 		script(src="scripts/slick.min.js")

@@ -58,11 +58,11 @@ html(lang="ru")
 					h1 написать нам
 					p
 					div.personal_data
-						a(class="js-link-popup" href="#sizes") |Правила обработки персональных данных
-						div(id="sizes" class="mfp-hide white-popup-block")
-							h1 правила обработки персональных данных
-							table
-								b test
+						a(href="#test-popup" class="show-popup" data-effect="mfp-zoom-in") Правила обработки персональных данных
+						div(id="test-popup" class="white-popup mfp-with-anim mfp-hide")
+							h1 правила обработки персональных данных 
+							img(src="http://webgrind.ru/wp-content/uploads/2018/09/cat.jpg" alt="")
+							p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti itaque ipsam illum eaque, odio cumque quam asperiores dolores labore ab.
 				div.message
 					form.mainform
 						p.email
@@ -73,12 +73,7 @@ html(lang="ru")
 							div(id="error_text" class="error")
 						p.send
 							input(id="send_message" type="button" value="Отправить сообщение")
-					//- input(type="text" size="35")
-					//- br
-					//- textarea(name="comment" cols="40" rows="3")
-					//- br
-					//- input(type="submit" class="message_send" value="Отправить сообщение")
-					//- div(id="formcontent")
 		script(src="scripts/jquery-3.5.1.slim.min.js")
 		script(src="scripts/bundle.js")
 		script(src="scripts/slick.min.js")
+		script(src="scripts/jquery.magnific-popup.min.js")

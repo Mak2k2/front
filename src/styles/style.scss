@@ -1,6 +1,5 @@
 body {
   position: relative;
-  //background-color: #ffffff;
   font-family: 'Roboto';
   font-family: 'Roboto';
   h1:first-letter {
@@ -13,11 +12,6 @@ img {
   margin-bottom: 15px;
   max-width: 100%;
   height: auto;
-  //width: auto;
-  //display: block;
-  //height: calc(50vh - 100px);
-  //width: 100%;
-  //margin: 0 auto; /* it centers any block level element */
 }
 
 .container {
@@ -26,11 +20,8 @@ img {
   margin: 48px 48px 48px 48px auto;
   min-height: 2500px;
   grid-template-rows: 4fr 4fr 3fr;
-  //grid-template-columns: 5%;
   .top {
     display: grid;
-    //background-color: #234565;
-    //background-color: #fffff;
     grid-template-columns: 1fr 4fr;
   }
 
@@ -49,7 +40,6 @@ img {
     font-size: 55px;
     margin-top: -10px;
   }
-  //background-color: #eee;
   font-size: 20px;
 }
 
@@ -67,12 +57,8 @@ img {
   max-width: 550px;
   padding: auto;
   position: absolute;
-  margin-top: 50px;
+  margin-top: 40px;
   margin-left: -60px;
-    //text-align: center;
-    //position: relative;
-    //top: 0px;
-    //left: 0;
   div {
     
   }
@@ -112,22 +98,12 @@ img {
       text-align: center; 
     }
     position: relative;
-    //max-width: 40%;
-    //width: 400px;
-    //margin-top: 50px;
-    //min-width: 0;
     .slick-arrow {
-      //margin: -5px 0 0 0;
-      //position: absolute;
       z-index: 1;
-      //z-index: 10;
-      // width: 30px;
-      // height: 60px;
-      top: 50%;
+      top: 40%;
     }
     /* Стрелка влево */ 
     .slick-arrow.slick-prev{
-      //position: absolute;
       left: 120px;
     } 
     /* Стрелка вправо */ 
@@ -156,33 +132,21 @@ img {
   margin: 0 auto;
   padding-top: 8%;
   .slick-slide {
-   //margin: 0 50px;
    padding: 0 40px;
   }
   div { 
     text-align: center; 
   }
-  //max-width: 40%;
-  //width: 400px;
-  //margin-top: 50px;
-  //min-width: 0;
+  
   .slick-arrow {
-    //margin: 50px auto;
-    //position: absolute;
     z-index: 1;
-    //z-index: 10;
-    // width: 30px;
-    // height: 60px;
     top: 70%;
   }
   /* Стрелка влево */ 
   .slick-arrow.slick-prev{
-    //position: absolute;
-    //left: 120px;
   } 
   /* Стрелка вправо */ 
   .slick-arrow.slick-next{
-    //right: 120px;
   }
 
 }
@@ -191,7 +155,6 @@ img {
   color: white;
   display: grid;
   grid-gap: 0px;
-  //margin: 0 auto;
   grid-template-columns: 1fr 1fr;
   .text_bottom {
     font-size: 20px;
@@ -215,7 +178,54 @@ img {
     }
   }
 }
-.error { color: red }
-.mainform {
-  .error { color: red }
+
+.white-popup {
+  position: relative;
+  background: #ffffff;
+  padding: 25px;
+  max-width: 90vw;
+  max-height: 90vh;
+  margin: 10% 10% 10% 10%;
+  font-size: 20px;
 }
+
+/* ZOOM */
+.mfp-zoom-in .mfp-with-anim {
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8); 
+}
+ 
+.mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+ 
+.mfp-zoom-in.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+ 
+.mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 0.8; }
+
+.mfp-zoom-in.mfp-removing .mfp-with-anim {
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
+  opacity: 0; 
+}
+ 
+.mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+.error { color: red }

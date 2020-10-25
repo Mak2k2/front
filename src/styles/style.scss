@@ -198,7 +198,14 @@ img {
 .success {
   color: green;
   font-size: 20px;
-  transform: rotate(-15deg);
+  p {
+    margin-top: -25px;
+  }
+  h1 {
+    transform: rotate(-10deg);
+    margin-bottom: 60px;
+    margin-left: -18px;
+  }
 }
 
 .white-popup {

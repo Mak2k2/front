@@ -21,7 +21,7 @@ $(document).ready(() => {
 			error_text.innerHTML = "Поле не заполнено.";
 		}
 		else {
-			message_success.innerHTML = "<div class=\"success\"><h1>отправлено</h1>";
+			message_success.innerHTML = "<div class=\"success\"><h1>отправлено</h1><p>Мы ответимвам на почту</p><p>в течение нескольких рабочих дней</p>";
 			error_email.innerHTML = "";
 			error_text.innerHTML = "";
 		}

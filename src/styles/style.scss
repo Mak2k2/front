@@ -202,5 +202,20 @@ img {
     margin: 0 auto;
     border: 2px;
     border-radius: 4px;
+    input, textarea {
+      border: solid 1px #CCCCCC;
+      //margin-left: 10px;
+      padding: 4px;
+      outline: 0;
+      width: 400px;
+      background: #F9F9F9;
+    }
+    .send {
+      float: right;
+    }
   }
+}
+.error { color: red }
+.mainform {
+  .error { color: red }
 }

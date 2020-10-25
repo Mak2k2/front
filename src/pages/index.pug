@@ -64,8 +64,21 @@ html(lang="ru")
 							table
 								b test
 				div.message
-					input(type="text" size="40")
-					textarea(name="comment" cols="40" rows="3")
+					form.mainform
+						p.email
+							input(type="email" id="email_message" name="email")
+							div(id="error_email" class="error")
+						p.msg
+							textarea(id="text_message")
+							div(id="error_text" class="error")
+						p.send
+							input(id="send_message" type="button" value="Отправить сообщение")
+					//- input(type="text" size="35")
+					//- br
+					//- textarea(name="comment" cols="40" rows="3")
+					//- br
+					//- input(type="submit" class="message_send" value="Отправить сообщение")
+					//- div(id="formcontent")
 		script(src="scripts/jquery-3.5.1.slim.min.js")
 		script(src="scripts/bundle.js")
 		script(src="scripts/slick.min.js")

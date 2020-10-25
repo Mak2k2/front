@@ -1,6 +1,7 @@
 $(document).ready(() => {
 	send_message.onclick = () => {
 		let email = document.getElementById("email_message").value;
+		//sessionStorage.setItem(emailForm, email);
 		let text = document.getElementById("text_message").value;
 		let emaillenCheck = email.indexOf("@");
 		if(email == "") error_email.innerHTML = "Пожалуйста, введите правильный email.";
@@ -25,5 +26,13 @@ $(document).ready(() => {
 			error_email.innerHTML = "";
 			error_text.innerHTML = "";
 		}
+
+		localStorage.setItem('emailForm', email);
+		let testMailForm = localStorage.getItem('emailForm');
+		if (testMailForm != 0) $("#email_message").val(testMailForm);
+
+		localStorage.setItem('textForm', text);
+		let testTextForm = localStorage.getItem('textForm');
+		if (testTextForm != 0) $("#text_message").val(testTextForm);
 	}
 });

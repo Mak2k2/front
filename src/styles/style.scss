@@ -145,6 +145,13 @@ img {
   .slick-arrow.slick-next{
   }
 
+  img {
+    margin-top: 48px;
+    margin-bottom: 48px;
+    -moz-box-shadow:0 0 20px #555;
+    -webkit-box-shadow:0 0 20px #555;
+    box-shadow:0px 0px 30px #555;
+  }
 }
 
 .personal_data {
@@ -177,7 +184,7 @@ img {
       //margin-left: 10px;
       padding: 4px;
       outline: 0;
-      width: 500px;
+      width: 400px;
       font-size: 20px;
       background: #F9F9F9;
     }
@@ -185,12 +192,17 @@ img {
       height: 300px;
     }
 
-    #send_message{
+    .button_send {
+
+    }
+
+    #send_message {
       padding: 15px;
-      width: 350px;
+      width: 300px;
       float: right;
       color: #white;
       background-color: #2401fe;
+      text-decoration: none;
     }
   }
 }

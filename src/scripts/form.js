@@ -2,18 +2,28 @@ $(document).ready(() => {
 	send_message.onclick = () => {
 		let email = document.getElementById("email_message").value;
 		let text = document.getElementById("text_message").value;
+		let emaillenCheck = email.indexOf("@");
 		if(email == "") error_email.innerHTML = "Пожалуйста, введите правильный email.";
-		else if (email.indexOf("@") == -1) {
+		else if (emaillenCheck == -1) {
+			error_email.innerHTML = "Пожалуйста, введите правильный email.";
+		}
+		else if (emaillenCheck > 3) {
+			error_email.innerHTML = "Пожалуйста, введите правильный email.";
+		}
+		else if (email.length > 11) {
+			error_email.innerHTML = "Пожалуйста, введите правильный email.";
+		}
+		else if (email.indexOf(".") == -1) {
 			error_email.innerHTML = "Пожалуйста, введите правильный email.";
 		}
 		else if(text == "") {
 			error_email.innerHTML = "";
 			error_text.innerHTML = "Поле не заполнено.";
 		}
-		else { 
-			alert("Сообщение отправлено!");
-				error_email.innerHTML = "";
-				error_text.innerHTML = "";
+		else {
+			message_success.innerHTML = "<div class=\"success\"><h1>отправлено</h1>";
+			error_email.innerHTML = "";
+			error_text.innerHTML = "";
 		}
 	}
 });

@@ -48,10 +48,6 @@ img {
   color: #7A7A7A;
 }
 
-// .footer {
-//   margin-left: 48px;
-// }
-
 .slider_vertical {
   max-height: 1000px;
   max-width: 550px;
@@ -196,22 +192,14 @@ img {
       color: #white;
       background-color: #2401fe;
     }
-
-    // .send {
-    //   float: right;
-    // }
   }
 }
 
-// .mainform {
-//   //width: 600px;
-//   //width: 800px;
-//   //height: 1000px;
-//   input[type=text]{
-//     width:900px;
-//     height: 1000px;
-//   }
-// }
+.success {
+  color: green;
+  font-size: 20px;
+  transform: rotate(-15deg);
+}
 
 .white-popup {
   position: relative;
@@ -262,4 +250,7 @@ img {
   opacity: 0;
 }
 
-.error { color: red }
+.error { 
+  color: red;
+  font-size: 20px;
+}

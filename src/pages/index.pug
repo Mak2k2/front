@@ -8,19 +8,19 @@ html(lang="ru")
 		div.container
 			div.top
 				div.header
+					span(class="fn org")
 					h1 репро 
 						|дукцио
 					p Оффлайн-магазин репродукций шедевров мирового искусства
-					div.info 
-						p 
-						|Санкт-Петербург,
-						br
-						|ул.Адмирала Черокова, 18
-						p 
-						|+7 812 960-22-01
-						br
-						|shop@reproduct.io
-						thre
+					div.info
+						div.vcard
+							div.adr
+								span.locality Санкт-Петербург,
+								br
+								span.street-address ул.Адмирала Черокова, 18
+							span.tel +7 812 960-22-01
+							br
+							span.email shop@reproduct.io
 				div.slider_z
 					div.slider
 						div
@@ -74,7 +74,7 @@ html(lang="ru")
 							textarea(id="text_message" placeholder="Сообщение")
 							div(id="error_text" class="error")
 						p.send
-							input(id="send_message" type="button" value="Отправить сообщение")
+							input(id="send_message" type="button" class="button_send" value="Отправить сообщение")
 		script(src="scripts/jquery-3.5.1.slim.min.js")
 		script(src="scripts/bundle.js")
 		script(src="scripts/slick.min.js")

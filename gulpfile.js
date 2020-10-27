@@ -8,6 +8,8 @@ var autoprefixer = require('autoprefixer');
 var cssnano = require('cssnano');
 var del = require('del');
 const webpack = require('webpack-stream');
+var { src, dest, parallel } = require('gulp');
+var plumber = require('gulp-plumber');
 
 // Девсервер
 function devServer(cb) {
@@ -45,12 +47,8 @@ function buildPages() {
 
 function buildScripts() {
   return src('src/scripts/*.js')
+    .pipe(plumber({ errorHandler }))
     .pipe(webpack({ output: { filename: 'bundle.js' } }))
-    .pipe(dest('build/scripts/'));
-}
-
-function additionalScripts() {
-  return src('src/scripts/additional/*.js')
     .pipe(dest('build/scripts/'));
 }
 
@@ -73,6 +71,11 @@ function buildAssets(cb) {
   cb();
 }
 
+function errorHandler(errors) {
+  console.warn('Error!');
+  console.warn(errors);
+}
+
 // Отслеживание
 function watchFiles() {
   watch(['src/pages/**/*.pug', 'src/blocks/**/*.pug'], buildPages);
@@ -87,7 +90,7 @@ exports.default =
     parallel(
       devServer,
       series(
-        parallel(buildPages, buildStyles, buildScripts, additionalScripts, buildAssets),
+        parallel(buildPages, buildStyles, buildScripts, buildAssets),
         watchFiles
       )
     )

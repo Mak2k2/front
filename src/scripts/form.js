@@ -3,25 +3,26 @@ $(document).ready(() => {
 		let email = document.getElementById("email_message").value;
 		let text = document.getElementById("text_message").value;
 		let emaillenCheck = email.indexOf("@");
-		if(email == "") error_email.innerHTML = "Пожалуйста, введите правильный email.";
+		let errorMail = "Введите почту в формате xxx@xxx.xxx";
+		if(email == "") error_email.innerHTML = errorMail;
 		else if (emaillenCheck == -1) {
-			error_email.innerHTML = "Пожалуйста, введите правильный email.";
+			error_email.innerHTML = "";
 		}
 		else if (emaillenCheck > 3) {
-			error_email.innerHTML = "Пожалуйста, введите правильный email.";
+			error_email.innerHTML = errorMail;
 		}
 		else if (email.length > 11) {
-			error_email.innerHTML = "Пожалуйста, введите правильный email.";
+			error_email.innerHTML = errorMail;
 		}
 		else if (email.indexOf(".") == -1) {
-			error_email.innerHTML = "Пожалуйста, введите правильный email.";
+			error_email.innerHTML = errorMail;
 		}
 		else if(text == "") {
 			error_email.innerHTML = "";
 			error_text.innerHTML = "Поле не заполнено.";
 		}
 		else {
-			message_success.innerHTML = "<div class=\"success\"><h1>отправлено</h1><p>Мы ответимвам на почту</p><p>в течение нескольких рабочих дней</p></div>";
+			message_success.innerHTML = "<div class=\"success\"><h2>отправлено</h2><p>Мы ответимвам на почту</p><p>в течение нескольких рабочих дней</p></div>";
 		}
 
 		localStorage.setItem('emailForm', email);

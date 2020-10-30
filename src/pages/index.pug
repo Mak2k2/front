@@ -7,13 +7,11 @@ html(lang="ru")
 		//include header.pug
 		div.container
 			div.top
-				div.header
-					span.fn.org
+				div.header.vcard
 					h1 репро 
 						|дукцио
 					span.category Оффлайн-магазин репродукций шедевров мирового искусства
-					div.info
-						div.vcard
+						div.info
 							div.adr
 								span.locality Санкт-Петербург,
 								br
@@ -62,8 +60,7 @@ html(lang="ru")
 						p Репродукцио, 2019
 						a(href="#test-popup" class="show-popup" data-effect="mfp-zoom-in") Правила обработки персональных данных
 						div(id="test-popup" class="white-popup mfp-with-anim mfp-hide")
-							h1 правила обработки персональных данных 
-							//img(src="http://webgrind.ru/wp-content/uploads/2018/09/cat.jpg" alt="")
+							h1 правила обработки персональных данных
 							p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti itaque ipsam illum eaque, odio cumque quam asperiores dolores labore ab.
 				div(id="message_success" class="message")
 					form.mainform
@@ -74,7 +71,8 @@ html(lang="ru")
 							textarea(id="text_message" placeholder="Сообщение")
 							div(id="error_text" class="error")
 						p.send
-							input(id="send_message" type="button" class="button_send" value="Отправить сообщение")
+							//- input(id="send_message" type="button" class="button_send" value="Отправить сообщение")
+							button(id="send_message" type="button" class="button_send") Отправить сообщение
 		script(src="assets/scripts/jquery-3.5.1.slim.min.js")
 		script(src="scripts/bundle.js")
 		script(src="assets/scripts/slick.min.js")

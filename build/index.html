@@ -13,6 +13,7 @@
   </head>
   <body>
     <!--include header.pug-->
+    <script src="assets/scripts/lazysizes.min.js"></script>
     <div class="container">
       <div class="top">
         <div class="header vcard">
@@ -23,16 +24,8 @@
             </div></span>
         </div>
         <div class="slider_z">
-          <div class="slider">
-            <div><img class="img1" src="assets/img/1.jpg" alt="Kartina1"></div>
-            <div><img class="img2" src="assets/img/2.jpg" alt="Kartina2"></div>
-            <div><img class="img3" src="assets/img/3.jpg" alt="Kartina3"></div>
-          </div>
-          <div class="slider_vertical">
-            <div class="vertical_img1"><img class="vertical_img1" src="assets/img/1.jpg" alt="Kartina1"></div>
-            <div class="vertical_img2"><img class="vertical_img2" src="assets/img/2.jpg" alt="Kartina2"></div>
-            <div class="vertical_img3"><img class="vertical_img3" src="assets/img/3.jpg" alt="Kartina3"></div>
-          </div>
+          <div class="slider"><img class="lazyload" data-src="assets/img/1.jpg" loading="lazy" alt="Kartina1"><img class="lazyload" data-src="assets/img/2.jpg" loading="lazy" alt="Kartina2"><img class="lazyload" data-src="assets/img/3.jpg" loading="lazy" alt="Kartina3"><img class="lazyload" data-src="assets/img/5.jpg" loading="lazy" alt="Kartina5"><img class="lazyload" data-src="assets/img/6.jpg" loading="lazy" alt="Kartina6"></div>
+          <div class="slider_vertical"><img class="img1 lazyload" data-src="assets/img/1.jpg" loading="lazy" alt="Kartina1"><img class="img2 lazyload" data-src="assets/img/2.jpg" loading="lazy" alt="Kartina2"><img class="img3 lazyload" data-src="assets/img/3.jpg" loading="lazy" alt="Kartina3"><img class="img5 lazyload" data-src="assets/img/5.jpg" loading="lazy" alt="Kartina5"><img class="img6 lazyload" data-src="assets/img/6.jpg" loading="lazy" alt="Kartina6"></div>
         </div>
       </div>
       <div class="middle">
@@ -41,12 +34,12 @@
           <p>Нестареющая классика и бестселлеры.</p>
         </div>
         <div class="slider_middle">
-          <div><img class="img1" src="assets/img/1.jpg" alt="Kartina1"></div>
-          <div><img class="img2" src="assets/img/2.jpg" alt="Kartina2"></div>
-          <div><img class="img3" src="assets/img/3.jpg" alt="Kartina3"></div>
-          <div><img class="img4" src="assets/img/4.jpg" alt="Kartina4"></div>
-          <div><img class="img5" src="assets/img/5.jpg" alt="Kartina5"></div>
-          <div><img class="img6" src="assets/img/6.jpg" alt="Kartina6"></div>
+          <div><img class="img1 lazyload" data-src="assets/img/1.jpg" loading="lazy" alt="Kartina1"></div>
+          <div><img class="img2 lazyload" data-src="assets/img/2.jpg" loading="lazy" alt="Kartina2"></div>
+          <div><img class="img3 lazyload" data-src="assets/img/3.jpg" loading="lazy" alt="Kartina3"></div>
+          <div><img class="img4 lazyload" data-src="assets/img/4.jpg" loading="lazy" alt="Kartina4"></div>
+          <div><img class="img5 lazyload" data-src="assets/img/5.jpg" loading="lazy" alt="Kartina5"></div>
+          <div><img class="img6 lazyload" data-src="assets/img/6.jpg" loading="lazy" alt="Kartina6"></div>
         </div>
       </div>
       <div class="bottom">

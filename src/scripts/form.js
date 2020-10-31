@@ -2,28 +2,20 @@ $(document).ready(() => {
 	send_message.onclick = () => {
 		let email = document.getElementById("email_message").value;
 		let text = document.getElementById("text_message").value;
-		let emaillenCheck = email.indexOf("@");
+		let emaillenCheck = email.match("[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z0-9]+");
 		let errorMail = "Введите почту в формате xxx@xxx.xxx";
-		if(email == "") error_email.innerHTML = errorMail;
-		else if (emaillenCheck == -1) {
-			error_email.innerHTML = "";
-		}
-		else if (emaillenCheck > 3) {
+		console.log(emaillenCheck);
+		if(emaillenCheck == null){
 			error_email.innerHTML = errorMail;
+			$('#email_message').css({"background-color": "#ffd5d6", "color": "#c00000"});
 		}
-		else if (email.length > 11) {
-			error_email.innerHTML = errorMail;
-		}
-		else if (email.indexOf(".") == -1) {
-			error_email.innerHTML = errorMail;
-		}
-		else if(text == "") {
+		else if (text == "") {
 			error_email.innerHTML = "";
 			error_text.innerHTML = "Поле не заполнено.";
+			$('#email_message').css({"background-color": "white", "color": "black"});
+			$('#text_message').css({"background-color": "#ffd5d6", "color": "#c00000"});
 		}
-		else {
-			message_success.innerHTML = "<div class=\"success\"><h2>отправлено</h2><p>Мы ответимвам на почту</p><p>в течение нескольких рабочих дней</p></div>";
-		}
+		else	message_success.innerHTML = "<div class=\"success\"><h2>отправлено</h2><p>Мы ответимвам на почту</p><p>в течение нескольких рабочих дней</p></div>";
 
 		localStorage.setItem('emailForm', email);
 		let testMailForm = localStorage.getItem('emailForm');

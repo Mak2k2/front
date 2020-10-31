@@ -5,6 +5,7 @@ html(lang="ru")
 		include head.pug
 	body
 		//include header.pug
+		script(src="assets/scripts/lazysizes.min.js")
 		div.container
 			div.top
 				div.header.vcard
@@ -21,36 +22,34 @@ html(lang="ru")
 							span.email shop@reproduct.io
 				div.slider_z
 					div.slider
-						div
-							img(src="assets/img/1.jpg", alt="Kartina1" class="img1")
-						div
-							img(src="assets/img/2.jpg", alt="Kartina2" class="img2")
-						div
-							img(src="assets/img/3.jpg", alt="Kartina3" class="img3")
+						img(data-src="assets/img/1.jpg" loading="lazy" alt="Kartina1" class="lazyload")
+						img(data-src="assets/img/2.jpg" loading="lazy" alt="Kartina2" class="lazyload")
+						img(data-src="assets/img/3.jpg" loading="lazy" alt="Kartina3" class="lazyload")
+						img(data-src="assets/img/5.jpg" loading="lazy" alt="Kartina5" class="lazyload")
+						img(data-src="assets/img/6.jpg" loading="lazy" alt="Kartina6" class="lazyload")
 					div.slider_vertical
-						div.vertical_img1
-							img(src="assets/img/1.jpg", alt="Kartina1" class="vertical_img1")
-						div.vertical_img2
-							img(src="assets/img/2.jpg", alt="Kartina2" class="vertical_img2")
-						div.vertical_img3
-							img(src="assets/img/3.jpg", alt="Kartina3" class="vertical_img3")
+						img(data-src="assets/img/1.jpg" loading="lazy" alt="Kartina1" class="img1 lazyload")
+						img(data-src="assets/img/2.jpg" loading="lazy" alt="Kartina2" class="img2 lazyload")
+						img(data-src="assets/img/3.jpg" loading="lazy" alt="Kartina3" class="img3 lazyload")
+						img(data-src="assets/img/5.jpg" loading="lazy" alt="Kartina5" class="img5 lazyload")
+						img(data-src="assets/img/6.jpg" loading="lazy" alt="Kartina6" class="img6 lazyload")
 			div.middle
 				div.text_middle
 						h1 популярное
 						p Нестареющая классика и бестселлеры.
 				div.slider_middle
 					div
-						img(src="assets/img/1.jpg", alt="Kartina1" class="img1")
+						img(data-src="assets/img/1.jpg" loading="lazy" alt="Kartina1" class="img1 lazyload")
 					div
-						img(src="assets/img/2.jpg", alt="Kartina2" class="img2")
+						img(data-src="assets/img/2.jpg" loading="lazy" alt="Kartina2" class="img2 lazyload")
 					div
-						img(src="assets/img/3.jpg", alt="Kartina3" class="img3")
+						img(data-src="assets/img/3.jpg" loading="lazy" alt="Kartina3" class="img3 lazyload")
 					div
-						img(src="assets/img/4.jpg", alt="Kartina4" class="img4")
+						img(data-src="assets/img/4.jpg" loading="lazy" alt="Kartina4" class="img4 lazyload")
 					div
-						img(src="assets/img/5.jpg", alt="Kartina5" class="img5")
+						img(data-src="assets/img/5.jpg" loading="lazy" alt="Kartina5" class="img5 lazyload")
 					div
-						img(src="assets/img/6.jpg", alt="Kartina6" class="img6")
+						img(data-src="assets/img/6.jpg" loading="lazy" alt="Kartina6" class="img6 lazyload")
 			div.bottom
 				div.text_bottom
 					h1 написать нам

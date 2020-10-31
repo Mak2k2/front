@@ -2,7 +2,7 @@ $(document).ready(() => {
 	send_message.onclick = () => {
 		let email = document.getElementById("email_message").value;
 		let text = document.getElementById("text_message").value;
-		let emaillenCheck = email.match("[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z0-9]+");
+		let emaillenCheck = email.match("[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+");
 		let errorMail = "Введите почту в формате xxx@xxx.xxx";
 		if(emaillenCheck == null){
 			error_email.innerHTML = errorMail;

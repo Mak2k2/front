@@ -1,0 +1,81 @@
+//- index.pug
+doctype html
+html(lang="ru")
+	head
+		include head.pug
+	body
+<<<<<<< HEAD
+		include header.pug
+=======
+		//include header.pug
+		script(src="assets/scripts/lazysizes.min.js")
+		div.container
+			div.top
+				div.header.vcard
+					h1 репро 
+						|дукцио
+					span.category Оффлайн-магазин репродукций шедевров мирового искусства
+						div.info
+							div.adr
+								span.locality Санкт-Петербург,
+								br
+								span.street-address ул.Адмирала Черокова, 18
+							span.tel +7 812 960-22-01
+							br
+							span.email shop@reproduct.io
+				div.slider_z
+					div.slider
+						img(data-src="assets/img/1.jpg" loading="lazy" alt="Kartina1" class="lazyload")
+						img(data-src="assets/img/2.jpg" loading="lazy" alt="Kartina2" class="lazyload")
+						img(data-src="assets/img/3.jpg" loading="lazy" alt="Kartina3" class="lazyload")
+						img(data-src="assets/img/5.jpg" loading="lazy" alt="Kartina5" class="lazyload")
+						img(data-src="assets/img/6.jpg" loading="lazy" alt="Kartina6" class="lazyload")
+					div.slider_vertical
+						img(data-src="assets/img/1.jpg" loading="lazy" alt="Kartina1" class="img1 lazyload" width="242" height="200")
+						img(data-src="assets/img/2.jpg" loading="lazy" alt="Kartina2" class="img2 lazyload" width="242" height="200")
+						img(data-src="assets/img/3.jpg" loading="lazy" alt="Kartina3" class="img3 lazyload" width="242" height="200")
+						img(data-src="assets/img/5.jpg" loading="lazy" alt="Kartina5" class="img5 lazyload" width="242" height="200")
+						img(data-src="assets/img/6.jpg" loading="lazy" alt="Kartina6" class="img6 lazyload" width="242" height="200")
+			div.middle
+				div.text_middle
+						h1 популярное
+						p Нестареющая классика и бестселлеры.
+				div.slider_middle
+					div
+						img(data-src="assets/img/1.jpg" loading="lazy" alt="Kartina1" class="img1 lazyload")
+					div
+						img(data-src="assets/img/2.jpg" loading="lazy" alt="Kartina2" class="img2 lazyload")
+					div
+						img(data-src="assets/img/3.jpg" loading="lazy" alt="Kartina3" class="img3 lazyload")
+					div
+						img(data-src="assets/img/4.jpg" loading="lazy" alt="Kartina4" class="img4 lazyload")
+					div
+						img(data-src="assets/img/5.jpg" loading="lazy" alt="Kartina5" class="img5 lazyload")
+					div
+						img(data-src="assets/img/6.jpg" loading="lazy" alt="Kartina6" class="img6 lazyload")
+			div.bottom
+				div.text_bottom
+					h1 написать нам
+					p Заполните форму справа
+					p или отправьте письмо на shop@reproduct.io
+					div.personal_data
+						p Репродукцио, 2019
+						a(href="#test-popup" class="show-popup" data-effect="mfp-zoom-in") Правила обработки персональных данных
+						div(id="test-popup" class="white-popup mfp-with-anim mfp-hide")
+							h1 правила обработки персональных данных
+							p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti itaque ipsam illum eaque, odio cumque quam asperiores dolores labore ab.
+				div(id="message_success" class="message")
+					form.mainform
+						p.email
+							input(id="email_message" name="email" placeholder="Эл.почта")
+							div(id="error_email" class="error")
+						p.msg
+							textarea(id="text_message" placeholder="Сообщение")
+							div(id="error_text" class="error")
+						p.send
+							button(id="send_message" type="button" class="button_send") Отправить сообщение
+>>>>>>> 924b881104abd238c7caf446f259d8ecb1c75fb9
+		script(src="assets/scripts/jquery-3.5.1.slim.min.js")
+		script(src="scripts/bundle.js")
+		script(src="assets/scripts/slick.min.js")
+		script(src="assets/scripts/jquery.magnific-popup.min.js")

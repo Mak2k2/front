@@ -1,0 +1,24 @@
+doctype html
+html(lang="ru")
+	head
+		include head.pug
+	body
+		div.wrapper
+			h1.checkout_header
+				span Фетч 
+				span.dot • 
+				span Оформление заказа
+			div.checkout_item
+				div.checkout
+					h1 test
+				div
+					form.form
+						div.mail
+							p Эл. почта
+							input(type="email")
+		script(src="assets/scripts/jquery-3.5.1.slim.min.js")
+		script(src="scripts/bundle.js")
+		script(src="assets/scripts/slick.min.js")
+		script(src="assets/scripts/jquery.magnific-popup.min.js")
+		footer.footer
+			include footer.pug

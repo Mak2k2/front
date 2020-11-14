@@ -558,6 +558,9 @@ body {
     a {
       color: #000000;
     }
+    a:hover {
+      color: #4541FE;
+    }
   }
   p {
     margin-top: 8px;
@@ -899,11 +902,15 @@ body {
   padding-right: 18px;
   padding-left: 28px;
   margin-left: 5px;
+
   .slick-slide {
-    //margin-right: 50px;
-    //margin-left: 50px;
-    //padding-right: 10px;
-    //padding-left: 15px;
+    a {
+      color: #000000;
+    }
+    a:hover {
+      color: #4541FE;
+    }
+
   }
 
   .slick-arrow.slick-prev{
@@ -956,8 +963,8 @@ body {
     float: right;
     background: #FFFFFF;
     border: 0;
-    margin-top: 10px;
-    margin-right: 2px;
+    margin-top: 8px;
+    margin-right: 8px;
     opacity: .4;
   }
   button:hover {
@@ -971,7 +978,8 @@ body {
     line-height: 32px;
     color: #000000;
     margin-left: 24px;
-    padding-top: 0px;
+    padding-top: 16px;
+    margin-bottom: 24px;
   }
   .popup_table {
     width: 640px;

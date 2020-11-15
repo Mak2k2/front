@@ -7,7 +7,7 @@ html(lang="ru")
 			include menu_light.pug
 			div.item
 				div.item_left
-					h1.item_header Maison Margiela Fusion Low Sneakers
+					h1.item_header(id="1") Maison Margiela Fusion Low Sneakers
 						p Кроссовки
 					div.item_buy
 						div.color
@@ -30,7 +30,7 @@ html(lang="ru")
 							a(href="#test-popup" class="show-popup" data-effect="mfp-zoom-in") Таблица размеров
 							div(id="test-popup" class="white-popup mfp-with-anim mfp-hide")
 								button(class="popup_close" id="close" type="button")
-									img(src="assets/img/icon-cross-hover.png")
+									img(loading="lazy" data-src="assets/img/icon-cross-hover.png")
 								h1 Таблица размеров
 								table.popup_table
 									tr
@@ -65,7 +65,7 @@ html(lang="ru")
 										td 43
 						div.buy
 							h3 
-								a(href="#") Купить, 92 000 ₽
+								a(href="#" id="send_buy") Купить, 92 000 ₽
 					div.material
 						h3 Материал
 						p Кожа, текстиль
@@ -98,56 +98,56 @@ html(lang="ru")
 						div(class="slide" style="background-image:url(assets/img/item_1/3.png)")
 						div(class="slide" style="background-image:url(assets/img/item_1/4.png)")
 					div.item_right_slider_bottom
-						img(src="assets/img/item_1/1.png")
-						img(src="assets/img/item_1/2.png")
-						img(src="assets/img/item_1/3.png")
-						img(src="assets/img/item_1/4.png")
+						img(loading="lazy" data-src="assets/img/item_1/1.png")
+						img(loading="lazy" data-src="assets/img/item_1/2.png")
+						img(loading="lazy" data-src="assets/img/item_1/3.png")
+						img(loading="lazy" data-src="assets/img/item_1/4.png")
 				//- h2.slider_bottom_header Вам может быть интересно
 				div.slider_bottom
 					div.slider_item
-						img(src="assets/img/catalog/1.jpg")
+						img(loading="lazy" data-src="assets/img/catalog/1.jpg")
 						h3
 							a(href="item.html") Maison Margiela Fusion  Low Sneakers
 						p Кроссовки
 						h3.price 92 000 ₽
 					div.slider_item
-						img(src="assets/img/catalog/2.jpg")
+						img(loading="lazy" data-src="assets/img/catalog/2.jpg")
 						h3 
 							a(href="#") Maison Margiela Fusion  Low Sneakers
 						p Кроссовки
 						h3.price 92 000 ₽
 					div.slider_item
-						img(src="assets/img/catalog/3.jpg")
+						img(loading="lazy" data-src="assets/img/catalog/3.jpg")
 						h3
 							a(href="#") Maison Margiela Fusion  Low Sneakers
 						p Кроссовки
 						h3.price 92 000 ₽
 					div.slider_item
-						img(src="assets/img/catalog/4.jpg")
+						img(loading="lazy" data-src="assets/img/catalog/4.jpg")
 						h3
 							a(href="#") Maison Margiela Fusion  Low Sneakers
 						p Кроссовки
 						h3.price 92 000 ₽
 					div.slider_item
-						img(src="assets/img/catalog/5.jpg")
+						img(loading="lazy" data-src="assets/img/catalog/5.jpg")
 						h3
 							a(href="#") Maison Margiela Fusion  Low Sneakers
 						p Кроссовки
 						h3.price 92 000 ₽
 					div.slider_item
-						img(src="assets/img/catalog/6.jpg")
+						img(loading="lazy" data-src="assets/img/catalog/6.jpg")
 						h3
 							a(href="#") Maison Margiela Fusion  Low Sneakers
 						p Кроссовки
 						h3.price 92 000 ₽
 					div.slider_item
-						img(src="assets/img/catalog/7.jpg")
+						img(loading="lazy" data-src="assets/img/catalog/7.jpg")
 						h3
 							a(href="#") Maison Margiela Fusion  Low Sneakers
 						p Кроссовки
 						h3.price 92 000 ₽
 					div.slider_item
-						img(src="assets/img/catalog/8.jpg")
+						img(loading="lazy" data-src="assets/img/catalog/8.jpg")
 						h3
 							a(href="#") Maison Margiela Fusion  Low Sneakers
 						p Кроссовки

@@ -24,8 +24,8 @@ $(document).ready(() => {
 
 	let summ_html = "";
 	summ_html = int_num.toString();
-  summ_html = summ_html.replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + " ");
-  summ_html = summ_html + " ₽";
+	summ_html = summ_html.replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + " ");
+	summ_html = summ_html + " ₽";
 
 	document.getElementById("checkout_basket").innerHTML = checkout_html;
 	document.getElementById("checkout_summ").innerHTML = summ_html;

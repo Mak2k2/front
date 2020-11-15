@@ -50,10 +50,6 @@ html {
   }
 }
 
-// img {
-//   max-width: 100%;
-// }
-
 body {
   font-family: "PT Sans";
   margin: 0 auto;
@@ -70,7 +66,6 @@ body {
 .slick-arrow:hover {
   opacity: 1;  
 }
-
 
 .header {
   margin: 0 auto;
@@ -107,21 +102,27 @@ body {
 }
 
 .nav {
+  @media (max-width: 1199px) {
+    display: flex;
+    max-width: 1040px;
+    overflow: scroll;
+    a{
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
   z-index: 10;
   max-width: 1440px;
   width: 100%;
   position: absolute;
   padding-top: 10px;
   padding-bottom: 16px;
-  //margin: 0 auto;
-  //margin-right: 50px;
   a {
     color: #000000;
   }
 
   li {
     display: inline-block;
-    //font-family: "PT Sans";
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -133,8 +134,12 @@ body {
   }
 
   .fetch {
+    @media (max-width: 1199px) {
+      margin-left: 20px;
+      margin-right: 10px;
+      padding: 0;
+    }
     margin-left: 150px;
-    //font-family: "PT Sans";
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -149,14 +154,19 @@ body {
   }
 
   .basket {
+    @media (max-width: 1199px) {
+      margin-left: 0px;
+    }
     border-bottom: none;
     margin-left: 361px;
   }
 
   .icon {
+    @media (max-width: 1199px) {
+      padding-right: 0;
+    }
     background: url("../assets/img/cart.png") no-repeat;
     padding-left: 18px;
-    //padding-right: 0px;
     border-bottom: none;
     padding-left: 22px;
     vertical-align: bottom;
@@ -168,12 +178,14 @@ body {
 }
 
 .slider_link {
+  @media (max-width: 1199px) {
+    margin-top: 150px;
+  }
   margin-top: 362px;
   margin-bottom: 72px;
   margin-left: 152px;
-  width: 402px;
+  max-width: 402px;
   height: 166px;
-  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 64px;
@@ -186,11 +198,13 @@ body {
 }
 
 .slider_black_link {
-  width: 576px;
+  @media (max-width: 1199px) {
+    margin-top: 150px;
+  }
+  max-width: 576px;
   height: 166px;
   margin-left: 152px;
   margin-top: 362px;
-  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 64px;
@@ -213,10 +227,14 @@ body {
   justify-self: center;
   align-items: center;
   background-color: #FFFFFF;
-  font-family: "PT Sans";
 }
 
 .cat {
+  @media (max-width: 1199px) {
+    grid-template-columns: 1fr;
+
+    grid-template-rows: 1fr 1fr; 
+  }
   display: grid;
   grid-gap: 28px;
   width: 1095px;
@@ -228,7 +246,6 @@ body {
 .info {
   margin-top: -10px;
   margin-bottom: 100px;
-  //font-family: "PT Sans";
   font-style: normal;
   font-size: 18px;
   line-height: 23px;  
@@ -237,7 +254,6 @@ body {
   height: 193px;
   margin-left: -20px;
   p {
-    //margin-top: 0px;
     margin-bottom: 15px;
   }
 }
@@ -245,15 +261,12 @@ body {
 .group {
   margin-top: -10px;
   h3 {
-    //font-family: PT Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 23px;
-    //text-decoration-line: underline;
     margin-bottom: 10px;
     margin-left: 1px;
-    //margin-top: 0px; 
   }
   a {
     color: #4541FE;
@@ -264,7 +277,6 @@ body {
   }
 
   p {
-    //margin-top: 6px;
     margin-left: 9px;
     font-style: normal;
     font-weight: normal;
@@ -289,19 +301,15 @@ body {
   width: 464px;
   height: 320px;
   background: #FFA88C;
-  //font-family: "PT Sans";
   h2 {
     width: 260px;
     height: 41px;
     margin-left: 16px;
-    //margin-top: 0px;
     padding-top: 26px;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
     line-height: 41px;
-    //text-decoration-line: none;
-    
     a {
       color: #000000;
     }
@@ -309,8 +317,6 @@ body {
   p {
     z-index: 10;
     position: absolute;
-    //top: 50px;
-    //position: relative;
     margin-left: 16px;
     font-style: normal;
     font-weight: normal;
@@ -340,7 +346,6 @@ body {
     margin-top: -2px;
     width: 322px;
     height: 41px;
-    //font-family: "PT Sans";
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -355,8 +360,6 @@ body {
   p {
     width: 280px;
     height: 42px;
-    //margin-top: -16px;
-    //margin-left: 16px;
     font-family: "PT Sans";
     font-style: normal;
     font-weight: normal;
@@ -393,7 +396,6 @@ body {
   p {
     position: absolute;
     margin-top: 73px;
-    //margin-bottom: -200px;
     margin-left: 24px;
     font-family: "PT Sans";
     font-style: normal;
@@ -407,7 +409,6 @@ body {
     margin-left: 30px;
     margin-top: 5px;
     position: absolute;
-    //margin-top: -80px;
     width: 700px;
     height: 560px;
     background: url(../assets/img/sneakers.png);
@@ -472,12 +473,9 @@ body {
   grid-gap: 48px;
   max-width: 1136px;
   height: 300px;
-  //font-family: "PT Sans";
   margin: 0 auto;
   padding-top: 42px;
   margin-top: -8px;
-  //margin-top: 2px;
-  //top: 648px;
   grid-template-columns: 138px 126px 124px 135px 147px 147px;
   a {
     color: #fff;
@@ -488,12 +486,6 @@ body {
 }
 
 .contact {
-  //width: 120px;
-  //height: 67px;
-  a {
-    //margin-bottom: 0px;
-    //margin-top: -15px;
-  }
   .mail {
     margin-top: -7px;
   }
@@ -524,7 +516,6 @@ body {
   margin: 0 auto;
   p, a {
     display: inline-block;
-    //font-family: PT Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -551,7 +542,6 @@ body {
 
 .wrapper {
   max-width: 1440px;
-  //height: 1987px;
   margin: 0 auto;
   background-color: white;
   padding-bottom: 66px;
@@ -664,7 +654,6 @@ body {
 
 .item_right_slider_top {
   margin-top: 32px;
-  //margin-bottom: 0px;
   max-width: 656px;
   max-height: 656px;
   .slide.slick-slide{
@@ -692,9 +681,6 @@ body {
   margin-top: 32px;
   margin-bottom: 32px;      
   margin-left: -26px;
-  //margin-right: 34px;
-  // padding-left: 24px;
-  // padding-right: 24px;
   padding: 14px 0px 0px 24px;
   background-color: #F2F2F2;
 
@@ -705,11 +691,7 @@ body {
   label {
     display: inline-block;
     cursor: pointer;
-    //width: 142px;
-    //height: 32px;
     text-align: center;
-    //margin-right: 12px;
-    //padding: 0px 15px;
     line-height: 34px;
     border: 1px solid #F2F2F2;
     background: #FBFBFB;
@@ -732,7 +714,6 @@ body {
     font-weight: normal;
     font-size: 16px;
     line-height: 21px;
-    //margin-right: 80px;
   }
 
   .color {
@@ -747,13 +728,10 @@ body {
       font-weight: normal;
       font-size: 16px;
       line-height: 21px;
-      //color: #FFFFFF;
-      //margin-left: 60px;
       margin-right: 10px;
       line-height: 30px;
       box-sizing: border-box;
       border-radius: 8px;
-      //margin-left: -2px;
     }
     h4 {
       margin-right: 60px;
@@ -809,7 +787,6 @@ body {
     }
   }
   .buy:hover {
-    //box-shadow: 0px 0px 25px  #FFC908;
     background: linear-gradient(180deg, #F5BF00 0%, #F0AD00 100%);
     border-radius: 4px;
   }
@@ -832,7 +809,6 @@ body {
   p {
     margin-top: 1px;
     margin-right: 1px;
-    //font-family: PT Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -887,9 +863,6 @@ body {
 .details {
   margin-top: 30px;
   margin-left: -2px;
-  h2 {
-    //margin-top: 4px;
-  }
   h3 {
     font-style: normal;
     font-weight: bold;
@@ -899,7 +872,6 @@ body {
     margin-bottom: 2px;
   }
   li {
-    //margin-bottom: -2px;
     list-style-type: none;
     font-style: normal;
     font-weight: normal;
@@ -908,7 +880,7 @@ body {
     color: #000000;
   }
   li:before {
-    content: "— "; /* Добавляем в качестве маркера символ */
+    content: "— ";
   }
 }
 
@@ -925,8 +897,6 @@ body {
 .slider_bottom {
   width: 1150px;
   height: 344px;
-  //margin-top: 24;
-  //margin-left: -32px;
   padding-right: 18px;
   padding-left: 28px;
   margin-left: 5px;
@@ -945,17 +915,14 @@ body {
     margin-top: 172px;
     margin-left: -16px;
   } 
-  /* Стрелка вправо */
   .slick-arrow.slick-next{
     margin-top: 172px;
     margin-right: 14px;
-    //right: 32px;
   }
   .slider_item {
     h3 {
       margin-top: 6px;
       margin-right: 90px;
-      //margin-bottom: 0px;
       font-style: normal;
       font-weight: bold;
       font-size: 16px;
@@ -1040,17 +1007,14 @@ body {
   display: grid;
   grid-gap: 0px;
   grid-template-columns: 464px 586px;
-  //grid-template-columns: 100%;
   align-self: center;
   justify-self: center;
-  //align-items: center;
   background-color: #FFFFFF;
 }
 
 .about_info {
   margin-top: 46px;
   margin-left: -2px;
-  //margin-right: 0px;
   margin-bottom: -8px;
   font-style: normal;
   font-weight: normal;
@@ -1067,7 +1031,6 @@ body {
     color: #000000;
   }
   p {
-    //margin-top: -5px;
     margin-bottom: 16px;
   }
 }
@@ -1075,7 +1038,6 @@ body {
 .about_contact_contact {
   margin-top: 132px;
   margin-left: 83px;
-  //margin-bottom: -20px;
   width: 586px;
   height: 354px;
   background-color: #F2F2F2;
@@ -1106,13 +1068,6 @@ body {
       margin-bottom: 30px;
     }
 
-    .address {
-      //margin-top: 23px;
-      //margin-bottom: -24px;
-    }
-    .requisites {
-      //margin-top: 40px;
-    }
     .payment {
       margin-top: 14px;
     }
@@ -1125,19 +1080,12 @@ body {
       margin-bottom: 16px;
     }
     p {
-      //margin-top: 12px;
-      //margin-bottom: -18px;
       color: #000000;
     }
     a {
       color: #000000;
-      //margin-bottom: -100px;
     }
   }
-}
-
-.about_contact {
-//margin-top: 40px;
 }
 
 .checkout_header {
@@ -1161,12 +1109,7 @@ body {
   margin-right: 152px;
   padding-top: 32px;
   display: grid;
-  // grid-gap: 48px;
-  //grid-row-gap: 48px;
   grid-column-gap: 24px;
-  //max-width: 1056px;
-  //margin-left: 152px;
-  //background-color: white;
   grid-template-columns: 464px 656px;
 }
 
@@ -1179,7 +1122,6 @@ body {
   }
   width: 488px;
   height: 470px;
-  //background-color: grey;
   padding-left: 88px;
   padding-top: 0px;
   font-style: normal;
@@ -1255,11 +1197,9 @@ body {
 }
 
 .form_button {
-  //display: inline-block;
   margin-top: 33px;
   margin-left: -24px;
   padding-top: 28px;
-  //padding-left: 20px;
   width: 488px;
   height: 98px;
   background: #F2F2F2;
@@ -1271,9 +1211,6 @@ body {
   div {
     display: inline-block;
     padding-left: 24px;
-    //margin-top: 22px;
-    //margin-left: 2px;
-    //margin-right: 370px;
   }
   p:first-child {
     margin-right: 350px;
@@ -1281,7 +1218,6 @@ body {
 }
 
 .button_send {
-  //display: inline-block;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -1289,23 +1225,19 @@ body {
   float: right;
   margin-right: 64px;
   margin-top: -38px;
-  //margin-bottom: 20px;
   height: 42px;
   width: 230px;
-  //margin-left: 
   border-radius: 4px;
   background: linear-gradient(180deg, #FFC908 0%, #FFBA08 100%);
   box-shadow: 0px 0px 15px rgba(255, 146, 17, 0.5);
   border-radius: 4px;
 }
 .button_send:hover {
-  //box-shadow: 0px 0px 25px  #FFC908;
   background: linear-gradient(180deg, #F5BF00 0%, #F0AD00 100%);
   border-radius: 4px;
 }
 
 .complete{
-  //display: grid;
   margin-left: 152px;
   margin-right: 152px;
   padding-top: 32px;
@@ -1328,6 +1260,7 @@ body {
   }
   a {
     color: #000000;
+    text-decoration-line: underline;
   }
 }
 
@@ -1348,8 +1281,6 @@ body {
   height: 16px;
   border: 0px solid red;
   border-radius: 50%;
-  //padding: 0px;  /* или padding: calc((100% - 100% / 1.4142) / 2);, где 100% = 10em — это значение width, а √2 ≈ 1.4142 */
-  //box-sizing: border-box;  /* чтобы padding не увеличивал ширину и высоту элемента */
   background: #4541FE;
   font-style: normal;
   font-weight: bold;
@@ -1359,18 +1290,12 @@ body {
   color: #FFFFFF;
 }
 
-.checkout_basket {
-//display: inline-block;
-}
-
 .checkout_price {
-  //display: inline-block;
   margin-bottom: 24px;
   max-width: 488px;
   max-height: 160px;
   div {
     display: inline-block;
-    //white-space: normal;
     margin-left: 16px;
     margin-top: 0px;
   }
@@ -1412,9 +1337,6 @@ body {
 .summ {
   margin-top: 16px;
   text-align: right;
-  //margin-right: -20px;
-  //float: right;
-  // margin-left: 
   font-style: normal;
   font-weight: bold;
   font-size: 24px;

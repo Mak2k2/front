@@ -29,6 +29,5 @@ $(document).ready(() => {
 		let item_json = JSON.stringify(item);
 		localStorage.setItem('basket_items' + quantity_item, item_json);
 		document.getElementById("quantity_item").innerHTML = "<span class=\"quantity\">" + quantity_item + "</span>";
-		//localStorage.clear();
 	}
 });

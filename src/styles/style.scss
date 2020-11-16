@@ -51,6 +51,9 @@ html {
 }
 
 body {
+  @media (max-width: 1199px) {
+    background-color: #f2f2f2;
+  }
   font-family: "PT Sans";
   margin: 0 auto;
   a:hover {
@@ -68,12 +71,20 @@ body {
 }
 
 .header {
+  @media (max-width: 1199px) {
+    max-width: 1199px;
+  }
   margin: 0 auto;
   max-width: 1440px;
   max-height: 600px;
 }
 
 .header_slider {
+  @media (max-width: 1199px) {
+    max-width: 1199px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
   margin: 0 auto;
   .slick-arrow.slick-prev{
     margin-top: 300px;
@@ -104,8 +115,10 @@ body {
 .nav {
   @media (max-width: 1199px) {
     display: flex;
-    max-width: 1040px;
+    max-width: 900px;
     overflow: scroll;
+    margin-right: 0;
+    margin-left: 0;
     a{
       margin-right: 0;
       margin-left: 0;
@@ -135,8 +148,8 @@ body {
 
   .fetch {
     @media (max-width: 1199px) {
-      margin-left: 20px;
-      margin-right: 10px;
+      margin-left: 18px;
+      margin-right: 32px;
       padding: 0;
     }
     margin-left: 150px;
@@ -155,7 +168,12 @@ body {
 
   .basket {
     @media (max-width: 1199px) {
-      margin-left: 0px;
+      //position: absolute;
+      margin-left: 32px;
+      float: right;
+      //right: -150px;
+      //z-index: 10;
+
     }
     border-bottom: none;
     margin-left: 361px;
@@ -163,7 +181,8 @@ body {
 
   .icon {
     @media (max-width: 1199px) {
-      padding-right: 0;
+      //padding-right: 0;
+      //float: right;
     }
     background: url("../assets/img/cart.png") no-repeat;
     padding-left: 18px;
@@ -179,7 +198,10 @@ body {
 
 .slider_link {
   @media (max-width: 1199px) {
-    margin-top: 150px;
+    margin-bottom: 32px;
+    text-align: center;
+    margin-left: 32px;
+    //margin-top: 150px;
   }
   margin-top: 362px;
   margin-bottom: 72px;
@@ -199,7 +221,10 @@ body {
 
 .slider_black_link {
   @media (max-width: 1199px) {
-    margin-top: 150px;
+    text-align: center;
+    margin-bottom: 32px;
+    margin-left: 32px;
+    //margin-top: 150px;
   }
   max-width: 576px;
   height: 166px;
@@ -217,6 +242,15 @@ body {
 }
 
 .middle {
+  @media (max-width: 1199px) {
+    max-width: 1199px;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    justify-content: center;
+    //height: 100%;
+    grid-auto-rows: 100px; 
+    //grid-gap: 410px;
+  }
   margin: 0 auto;
   max-width: 1440px;
   display: grid;
@@ -231,9 +265,19 @@ body {
 
 .cat {
   @media (max-width: 1199px) {
-    grid-template-columns: 1fr;
-
-    grid-template-rows: 1fr 1fr; 
+    max-width: 899px;
+    grid-template-columns: 150px 150px;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    //grid-template-rows: 2fr;
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 1; 
+    grid-row-end: 2;
+    //height: 100%;
   }
   display: grid;
   grid-gap: 28px;
@@ -244,6 +288,14 @@ body {
 }
 
 .info {
+  @media (max-width: 1199px) {
+    max-width: 240px;
+    grid-column-start: 1; 
+    grid-column-end: 3;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-left: -10px;
+  } 
   margin-top: -10px;
   margin-bottom: 100px;
   font-style: normal;
@@ -259,6 +311,12 @@ body {
 }
 
 .group {
+  @media (max-width: 1199px) {
+    //max-width: 1199px;
+    margin: 0 auto;
+    //margin-left: 50px;
+    padding-right: 0px;
+  }
   margin-top: -10px;
   h3 {
     font-style: normal;
@@ -288,6 +346,19 @@ body {
 }
 
 .item_top {
+  @media (max-width: 1199px) {
+    max-width: 1199px;
+    grid-template-columns: 1fr;
+    margin-top: 1600px;
+    margin-left: 0px;
+    margin-right: 0px;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    //height: 100%;
+  }
   display: grid;
   grid-gap: 0px;
   margin: 0 auto;
@@ -298,6 +369,18 @@ body {
 }
 
 .item_1 {
+  @media (max-width: 1199px) {
+    margin: 0 auto;
+    max-width: 1199px;
+    margin-left: 96px;
+    margin-right: 0px;
+    h2 {
+      //z-index: 10;
+      //position: absolute;
+    }
+    p {
+    }
+  }
   width: 464px;
   height: 320px;
   background: #FFA88C;
@@ -326,7 +409,13 @@ body {
     color: #000000;
   }
 
-   .item_1_image {
+  .item_1_image {
+    @media (max-width: 1199px) {
+      max-width: 1199px;
+      margin: 0 auto;
+      margin-top: 60px;
+      margin-bottom: -20px;
+    }
     margin-top: 44px;
     width: 442.47px;
     height: 223.69px;
@@ -334,10 +423,17 @@ body {
     background: url(../assets/img/item_1_image.png);
     background-size: cover;
     transform: rotate(-7.82deg);
-   }
+  }
 }
 
 .item_2 {
+  @media (max-width: 1199px) {
+    max-width: 1199px;
+    text-align: left;
+    //margin-top: 1000px;
+    //grid-template-columns: 1fr;
+    //margin-top: 500px;
+  }
   width: 464px;
   height: 160px;
   margin-top: 40px;
@@ -360,7 +456,7 @@ body {
   p {
     width: 280px;
     height: 42px;
-    font-family: "PT Sans";
+   //font-family: "PT Sans";
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -370,6 +466,26 @@ body {
 }
 
 .item_3 {
+  @media (max-width: 1199px) {
+    //grid-template-columns: 1fr;
+    max-width: 1199px;
+    margin: 0 auto;
+    margin-top: 200px;
+    position: relative;
+    //margin-top: 1000px;
+    h2 {
+      max-width: 440px;
+      padding-left: 52px;
+    }
+    p {
+      z-index: 10;
+      padding-top: 50px;
+      padding-left: 75px;
+    }
+    .item_3_image {
+      padding-top: 130px;
+    }
+  }
   display: inline-block;
   width: 655px;
   height: 504px;
@@ -382,7 +498,7 @@ body {
     height: 41px;
     margin-left: 24px;
     margin-top: 24px;
-    font-family: "PT Sans";
+    //font-family: "PT Sans";
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -397,7 +513,7 @@ body {
     position: absolute;
     margin-top: 73px;
     margin-left: 24px;
-    font-family: "PT Sans";
+    //font-family: "PT Sans";
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -413,10 +529,34 @@ body {
     height: 560px;
     background: url(../assets/img/sneakers.png);
     background-size: cover;
+    z-index: 9;
   }
 }
 
 .item_bottom {
+  @media (max-width: 1199px) {
+    margin-top: 2080px;
+    max-width: 899px;
+    background: url(../assets/img/item_bottom.jpg);
+    background-size: cover;
+    transform: rotate(22.82deg);
+    max-width: 736px;
+    height: 50%;
+    h2 {
+      position: absolute;
+      top: -150px;
+      padding-bottom: 0px;
+      padding-left: 50px;
+      padding-right: 50px;
+      transform: rotate(-22.82deg);
+    }
+    p {
+      position: absolute;
+      top: 36px;
+      padding-left: 98px;
+      transform: rotate(-22.82deg);
+    }
+  }
   margin: 0 auto;
   margin-top: -85px;
   width: 1136px;
@@ -427,7 +567,6 @@ body {
     margin-left: 16px;
     width: 489px;
     height: 41px;
-    font-family: "PT Sans";
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -450,6 +589,11 @@ body {
 }
 
 .footer {
+  @media (max-width: 1199px) {
+    margin-top: 1000px;
+    max-width: 1199px;
+    padding-left: 30px;
+  }
   max-width: 1440px;
   background-color: #000;
   margin: 0 auto;
@@ -469,6 +613,17 @@ body {
 }
 
 .footer_cat {
+  @media (max-width: 1199px) {
+    max-width: 1199px;
+    height: 100%;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+  }
   display: grid;
   grid-gap: 48px;
   max-width: 1136px;
@@ -486,6 +641,10 @@ body {
 }
 
 .contact {
+  @media (max-width: 1199px) {
+    max-width: 1199px;
+    margin: 0 auto;
+  }
   .mail {
     margin-top: -7px;
   }
@@ -501,7 +660,7 @@ body {
   }
   .call_free {
     margin-top: -7px;
-    font-family: PT Sans;
+    //font-family: PT Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -512,6 +671,10 @@ body {
 }
 
 .copyright {
+  @media (max-width: 1199px) {
+    max-width: 1199px;
+    margin: 0 auto;
+  }
   max-width: 1136px;
   margin: 0 auto;
   p, a {
@@ -541,6 +704,9 @@ body {
 }
 
 .wrapper {
+  @media (max-width: 1199px) {
+    max-width: 1199px;
+  }
   max-width: 1440px;
   margin: 0 auto;
   background-color: white;
@@ -1199,7 +1365,8 @@ body {
 .form_button {
   margin-top: 33px;
   margin-left: -24px;
-  padding-top: 28px;
+  //padding-top: 28px;
+  padding-bottom: 30px;
   width: 488px;
   height: 98px;
   background: #F2F2F2;
@@ -1209,32 +1376,45 @@ body {
   line-height: 17px;
   color: #000000;
   div {
-    display: inline-block;
+    //display: inline-block;
     padding-left: 24px;
   }
   p:first-child {
     margin-right: 350px;
+    padding-top: 28px;
   }
 }
 
 .button_send {
+  position: absolute;
+  margin-top: 470px;
+  //display: inline-block;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
-  float: right;
-  margin-right: 64px;
-  margin-top: -38px;
-  height: 42px;
+  padding-top: 12px;
+  top: 0;
+  text-align: center;
+  //padding-left: 18px;
+  //float: right;
+  //margin-right: 64px;
+  //margin-top: -32px;
+  //margin-bottom: 120px;
+  margin-left: 40px;
+  //margin-bottom: 10px;
+  height: 44px;
   width: 230px;
   border-radius: 4px;
   background: linear-gradient(180deg, #FFC908 0%, #FFBA08 100%);
   box-shadow: 0px 0px 15px rgba(255, 146, 17, 0.5);
   border-radius: 4px;
+  color: #000000;
 }
 .button_send:hover {
   background: linear-gradient(180deg, #F5BF00 0%, #F0AD00 100%);
   border-radius: 4px;
+  color: #000000;
 }
 
 .complete{

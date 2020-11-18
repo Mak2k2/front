@@ -103,7 +103,7 @@ html(lang="ru")
 						img(loading="lazy" data-src="assets/img/item_1/3.png")
 						img(loading="lazy" data-src="assets/img/item_1/4.png")
 				//- h2.slider_bottom_header Вам может быть интересно
-				div.slider_bottom
+				div.slider_bottom(id="reload")
 					div.slider_item
 						img(loading="lazy" data-src="assets/img/catalog/1.jpg")
 						h3
@@ -156,5 +156,5 @@ html(lang="ru")
 		script(src="scripts/bundle.js")
 		script(src="assets/scripts/slick.min.js")
 		script(src="assets/scripts/jquery.magnific-popup.min.js")
-		footer.footer
+		footer.footer.null
 			include footer.pug

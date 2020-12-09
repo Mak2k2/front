@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+html {
+  background-color: #E5E5E5;
+  h1:first-letter {
+    text-transform: capitalize;
+  }
+  h2:first-letter {
+    text-transform: capitalize;
+  }
+  li:first-letter {
+    text-transform: capitalize;
+  }
+}
+
+.header {
+  margin: 0 auto;
+  //position: relative;
+  max-width: 1440px;
+  max-height: 600px;
+}
+
+.header_slider {
+  //display: flex;
+  //align-items: center;
+  //justify-content: center;
+  //margin: 0 auto;
+  //position: relative;
+  //max-width: 1456px;
+  //max-height: 672px;
+  // img {
+  //   display: block;
+  //   margin-left: auto;
+  //   margin-right: auto }
+}
+
+.slick-current {
+  //width: 100%;
+  //max-height: 672px;
+}
+
+.slide{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;  
+}
+
+.slide.slick-slide{
+  //min-height:calc(100vh - 40px);
+  width: 1440px;
+  height: 600px;
+}
+
+.slick-arrow {
+  z-index: 1;
+  //top: 50%;
+}
+
+/* Стрелка влево */ 
+.slick-arrow.slick-prev{
+  margin-top: 286px;
+  left: 32px;
+} 
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+  margin-top: 286px;
+  right: 32px;
+}
+
+.nav {
+  z-index: 10;
+  position: absolute;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    margin-right: 24px;
+    border-bottom: 1px solid currentColor;
+    vertical-align: middle;
+    //text-decoration-line: underline;
+    line-height: 0.85;
+    color: #000000;
+  }
+
+  .fetch {
+    //position: relative;
+    //width: 54px;
+    //height: 31px;
+    //left: calc(50% - 54px/2 - 541px);
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+    border-bottom: none;
+    //text-decoration-line: none;
+    margin-right: 42px;
+    margin-left: 152px;
+  }
+
+  .icon {
+    //top: 124px;
+    margin-left: 407px;
+    background: url("../assets/img/cart.png") no-repeat;
+    padding-left: 18px;
+    padding-top: 8px;
+    border-bottom: none;
+    padding-left: 22px;
+    //margin-right: 152px;
+    //background-image:url("../assets/img/cart.png") no-repeat left center;//no-repeat left center;
+    //background-size: 18px;
+    //display:inline-block;
+    vertical-align: middle;
+    //padding-left: 25px;
+  }
+}
+
+.slider_link {
+  //position: absolute;
+  margin-top: 362px;
+  margin-bottom: 72px;
+  margin-left: 152px;
+  width: 402px;
+  height: 166px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 83px;
+  text-decoration-line: underline;
+  color: #000000;
+}
+
+.slider_black_link {
+  //position: absolute;
+width: 576px;
+height: 166px;
+margin-left: 152px;
+margin-top: 362px;
+
+font-family: "PT Sans";
+font-style: normal;
+font-weight: bold;
+font-size: 64px;
+line-height: 83px;
+text-decoration-line: underline;
+
+color: #FFFFFF;
+
+}
+//h1385
+.middle {
+  margin: 0 auto;
+  //position: relative;
+  max-width: 1440px;
+  max-height: 600px;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-rows: 312px 529px 553px ;
+  grid-template-columns: 100%;
+  align-self: center;
+  justify-self: center;
+  align-items: center;
+  div {
+    //border-color: black; /* Цвет границы */
+    //border-style: solid; /* Стиль границы */
+    //padding: 1px; /* Поля вокруг текста */
+  }
+}
+
+.cat {
+  display: grid;
+  grid-gap: 32px;
+  width: 1095px;
+  height: 193px;
+  margin-left: 152px;
+  //top: 648px;
+  grid-template-columns: 240px 126px 124px 135px 147px 147px;
+}
+
+.info {
+  font-family: "PT Sans";
+  font-style: normal;
+  //font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+  p {
+    //position: absolute;
+    //display: inline-block;
+  }
+}
